@@ -3,13 +3,17 @@ package Adapter;
 import java.io.IOException;
 
 public class Main {
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         Student student = new Student();
         student.setFirstName("Michael");
         student.setSecondName("Jackson");
         student.setCourse("Dance");
 
         ISerialize serialize = new JsonAdapter();
-        serialize.XMLSerialiazation(student);
+        try {
+            serialize.XMLSerialiazation(student);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }

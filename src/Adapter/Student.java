@@ -21,7 +21,7 @@ public class Student implements Serializable {
         return firstName;
     }
 
-    @JsonProperty("SurName")
+    @JsonProperty("Surname")
     public String getSecondName() {
         return secondName;
     }
@@ -36,7 +36,7 @@ public class Student implements Serializable {
         this.firstName = firstName;
     }
 
-    @JsonProperty("SurName")
+    @JsonProperty("Surname")
     public void setSecondName(String secondName) {
         this.secondName = secondName;
     }
