@@ -1,6 +1,6 @@
 package Proxy;
 
-public class Main {
+public class MainProxy {
     public static void main(String[] args) {
         Spaceship firstSpaceship = new MillenuimFalconProxy(new Pilot("Han Solo"));
         firstSpaceship.fly();
