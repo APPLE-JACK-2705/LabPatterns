@@ -1,12 +1,13 @@
 package Bridge;
 
 public class Student extends Person{
-    public Student(CourseMenu courseMenu, String type) {
-        super(courseMenu, type);
+    public Student(CourseMenu courseMenu) {
+        super(courseMenu);
     }
 
     @Override
     void showDetails() {
-        System.out.println("Вы вошли как " + getPersonType() + "!");
+        System.out.println("Вы вошли как студент!");
+        courseMenu.showMenu();
     }
 }
