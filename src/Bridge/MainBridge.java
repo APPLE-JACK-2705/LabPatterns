@@ -9,7 +9,7 @@ public class MainBridge {
         Scanner scanner = new Scanner(System.in);
 
         while (true){
-            System.out.println("Введите, вы преподаватель или студент: ");
+            System.out.println("Вы преподаватель или студент?");
             String type = scanner.nextLine().toLowerCase();
             System.out.println("Введите 1, если у вас высокий уровень или введите 0, если у вас низкий уровень: ");
             int number = scanner.nextInt();

@@ -7,6 +7,6 @@ public class Student extends Person{
 
     @Override
     void showDetails() {
-        System.out.println("Вы вошли как студент!");
+        System.out.println("Вы вошли как " + getPersonType() + "!");
     }
 }
