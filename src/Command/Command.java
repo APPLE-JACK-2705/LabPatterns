@@ -10,7 +10,7 @@ public abstract class Command {
         this.right = right;
     }
 
-    public abstract void undo();
+//    public abstract void undo();
 
     public abstract boolean execute();
 }

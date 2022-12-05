@@ -6,10 +6,10 @@ public class MultCommand extends Command{
         super(calculator, left, right);
     }
 
-    @Override
-    public void undo() {
-        calculator.div(left, right);
-    }
+//    @Override
+//    public void undo() {
+//        calculator.div(left, right);
+//    }
 
     @Override
     public boolean execute() {

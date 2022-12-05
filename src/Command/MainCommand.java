@@ -13,27 +13,21 @@ public class MainCommand {
 
         if (scanner.hasNextFloat()) {
             left = scanner.nextFloat();
-            System.out.println("Первое число: "
-                    + left);
+            System.out.println("Первое число: " + left);
         } else {
-            System.out.println("Неизвестное первое чсило: "
-                    + scanner.next());
+            System.out.println("Неизвестное первое чсило: " + scanner.next());
         }
         if (scanner.hasNext()) {
             operation = scanner.next();
-            System.out.println("Операция: "
-                    + operation);
+            System.out.println("Операция: " + operation);
         } else {
-            System.out.println("Неизвестная операция: "
-                    + scanner.next());
+            System.out.println("Неизвестная операция: " + scanner.next());
         }
         if (scanner.hasNextFloat()) {
             right = scanner.nextFloat();
-            System.out.println("Второе число: "
-                    + right);
+            System.out.println("Второе число: " + right);
         } else {
-            System.out.println("Неизвестное второе число: "
-                    + scanner.next());
+            System.out.println("Неизвестное второе число: " + scanner.next());
         }
 
         scanner.close();

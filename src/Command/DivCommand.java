@@ -7,10 +7,10 @@ public class DivCommand extends Command{
         if(right == 0) throw new ArithmeticException("Деление на ноль невозможно!");
     }
 
-    @Override
-    public void undo() {
-        calculator.mult(left, right);
-    }
+//    @Override
+//    public void undo() {
+//        calculator.mult(left, right);
+//    }
 
     @Override
     public boolean execute() {

@@ -2,14 +2,14 @@ package Command;
 
 public class Invoker {
     private Command command;
-    private CommandHistory history = new CommandHistory();
+    //private CommandHistory history = new CommandHistory();
 
     public void setCommand(Calculator receiver, float left, float right, String operation){
-        command = pickCommand(receiver, left, right, operation);
+        command = chooseCommand(receiver, left, right, operation);
         command.execute();
     }
 
-    private Command pickCommand(Calculator receiver, float left, float right, String operation){
+    private Command chooseCommand(Calculator receiver, float left, float right, String operation){
         switch (operation){
             case "/":
                 return new DivCommand(receiver, left, right);

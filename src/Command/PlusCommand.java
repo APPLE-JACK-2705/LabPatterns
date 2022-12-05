@@ -6,10 +6,10 @@ public class PlusCommand extends Command{
         super(calculator, left, right);
     }
 
-    @Override
-    public void undo() {
-        calculator.minus(left, right);
-    }
+//    @Override
+//    public void undo() {
+//        calculator.minus(left, right);
+//    }
 
     @Override
     public boolean execute() {
